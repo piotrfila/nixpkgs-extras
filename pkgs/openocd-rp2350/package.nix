@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
   version = "0.12.0";
   src = fetchurl {
     url = "https://github.com/raspberrypi/openocd/archive/master.tar.gz";
-    sha256 = "";
+    sha256 = "sha256-UtD1wJrSYnLllK9dW3dsIzHSevpMY7fT47ZmrNl+uT8=";
   };
 
   nativeBuildInputs = [ pkg-config tcl ];
