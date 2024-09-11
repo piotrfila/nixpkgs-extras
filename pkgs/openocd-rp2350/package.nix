@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     owner = "raspberrypi";
     repo = "openocd";
     rev = "ebec9504d7ad2fbd7a64d60dace013267d80172d";
-    hash = "";
+    hash = "sha256-NBuuQnUFj3gMZoxH3IQBxJUv+6VyAofTvrqvg8t410U=";
   };
 
   nativeBuildInputs = [ pkg-config tcl ];
