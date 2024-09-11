@@ -6,7 +6,7 @@ let
   callPackage = pkgs.lib.callPackageWith (pkgs // self);
 
   self = {
-    openocd = callPackage ./pkgs/openocd-rp2350/package.nix {};
+    openocd-rp2350 = callPackage ./pkgs/openocd-rp2350/package.nix {};
   };
 in
 self
