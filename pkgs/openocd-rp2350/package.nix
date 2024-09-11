@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   pname = "openocd";
   version = "0.12.0";
   src = fetchurl {
-    url = "https://github.com/raspberrypi/openocd/archive/master.tar.gz";
+    url = "https://github.com/raspberrypi/openocd/archive/ebec9504d7ad2fbd7a64d60dace013267d80172d.tar.gz";
     sha256 = "sha256-UtD1wJrSYnLllK9dW3dsIzHSevpMY7fT47ZmrNl+uT8=";
   };
 
