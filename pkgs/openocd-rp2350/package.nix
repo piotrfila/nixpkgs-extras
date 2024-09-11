@@ -1,6 +1,6 @@
 { stdenv
 , lib
-, fetchurl
+, fetchFromGitHub
 , pkg-config
 , hidapi
 , tcl
@@ -22,9 +22,11 @@ in
 stdenv.mkDerivation rec {
   pname = "openocd-rp2350";
   version = "0.12.0";
-  src = fetchurl {
-    url = "https://github.com/raspberrypi/openocd/archive/ebec9504d7ad2fbd7a64d60dace013267d80172d.tar.gz";
-    sha256 = "sha256-wUL+KdUvnGzXuUFQxGZj70mgC9E1Dwe4AuV6f4OStUg=";
+  src = fetchFromGitHub {
+    owner = "raspberrypi";
+    repo = "openocd";
+    rev = "ebec9504d7ad2fbd7a64d60dace013267d80172d";
+    hash = "";
   };
 
   nativeBuildInputs = [ pkg-config tcl ];
