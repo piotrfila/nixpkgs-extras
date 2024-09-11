@@ -23,8 +23,8 @@ stdenv.mkDerivation rec {
   pname = "openocd";
   version = "0.12.0";
   src = fetchurl {
-    url = "mirror://sourceforge/project/${pname}/${pname}/${version}/${pname}-${version}.tar.bz2";
-    sha256 = "sha256-ryVHiL6Yhh8r2RA/5uYKd07Jaow3R0Tu+Rl/YEMHWvo=";
+    url = "https://github.com/raspberrypi/openocd/archive/master.tar.gz";
+    sha256 = "";
   };
 
   nativeBuildInputs = [ pkg-config tcl ];
@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
       "remote target" for source-level debugging of embedded systems using the
       GNU GDB program.
     '';
-    homepage = "https://openocd.sourceforge.net/";
+    homepage = "https://github.com/raspberrypi/openocd";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ bjornfor prusnak ];
     platforms = platforms.unix ++ platforms.windows;
